@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 190px 130px 100px 350px;
+  grid-template-columns: 140px 1.3fr 1fr ;
+  grid-template-areas: 'side mainImage description'
+  'side mainImage feature'
+  'side mainImage purchase'
+  'side recommend recommend'
+  'side recommend recommend';
+  width: 80%;
+  height: 80vh;
+}
+
+.container div{
+  padding: 20px;
+  
+}
+.side {
+  grid-area: side;
+  padding: 0;
+  position: relative;
+}
+.side a {
+  display: block;
+  text-decoration: none;
+  text-align: right;
+  position: relative;
+  top: 50px;
+}
+.side a:link, a:visited  {
+  color: black;
+}
+.side a:first-child {
+  font-size: 20px;
+  right: 50px;
+}
+.mainImage {
+  grid-area: mainImage;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+
+}
+.description {
+  grid-area: description;
+
+}
+button {
+  margin: 0;
+}
+.feature {
+  grid-area: feature;
+  margin: 0 auto;
+  padding: 0;
+}
+.f_button div {
+  padding: 0;
+}
+
+.purchase {
+  grid-area: purchase;
+}
+
+.purchase p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.recommend {
+  grid-area: recommend;
+}
+.gutter-row {
+  border-right: 1px solid #ccc;
+}
+.gutter-row div {
+  width: 80%;
+  border-radius: 10px;
+}
+
