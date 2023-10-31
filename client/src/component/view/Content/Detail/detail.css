@@ -21,6 +21,22 @@
 }
 .side {
   grid-area: side;
+  padding: 0;
+  position: relative;
+}
+.side a {
+  display: block;
+  text-decoration: none;
+  text-align: right;
+  position: relative;
+  top: 50px;
+}
+.side a:link, a:visited  {
+  color: black;
+}
+.side a:first-child {
+  font-size: 20px;
+  right: 50px;
 }
 .mainImage {
   grid-area: mainImage;

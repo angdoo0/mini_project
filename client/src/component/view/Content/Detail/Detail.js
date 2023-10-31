@@ -7,6 +7,7 @@ import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from "react-icons/ai";
 import './detail.css'
 
 const Detail = () => {
+
   const review_style = {
     padding: '8px 0',
     margin: '0 auto',
@@ -17,9 +18,14 @@ const Detail = () => {
 
   return (
     <div className='container' style={{ margin: '0 auto', width: '1400px'}}>
-      <div className='side'>
+
+      <div className='side' style={{ padding: 0}}>
+        <a href='/' >Men</a >
+        <br/><br/>
+        <a href='/' >-&nbsp;스니커즈</a >
       </div>
-      <div className='mainImage' style={{ width:'550px', margin: '0 auto'}}>
+
+      <div className='mainImage' style={{ width:'600px', margin: '0 auto'}}>
         <AiOutlineDoubleLeft />
         <img src= '/img/폴로 CWPOCFTYZ220109-100.jpg' alt='폴로 CWPOCFTYZ220109-100'
         style= {{ width: '90%'}} />
@@ -52,7 +58,7 @@ const Detail = () => {
             color: 'black',
             background: "skyblue",
             }} >
-            <a href="/">구매하기</a>
+            <a href="/products/:productId/purchase">구매하기</a>
         </Button>
         <span>&nbsp;&nbsp;&nbsp;</span>
         <Button type="primary" 
@@ -65,7 +71,7 @@ const Detail = () => {
             color: 'black',
             background: "#fdd835", 
             }} >
-            <a href="/" style={{  fontWeight: 'bold', }}>장바구니</a>
+            <a href="/">장바구니</a>
         </Button>
         <p>구매하기를 누르면 타사이트로 이동합니다.</p>
       </div>

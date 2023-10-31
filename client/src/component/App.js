@@ -1,10 +1,11 @@
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
-import LandingPage from './view/LandingPage/LandingPage';
+import LandingPage from './view/Content/LandingPage/LandingPage';
 import Footer from './view/Footer/Footer';
 import NavBar from './view/NavBar/NavBar';
-import Login from './view/Content/Login'
+import Login from './view/Content/Login/Login'
 import Detail from "./view/Content/Detail/Detail";
 import SideBar from "./view/Sider/SideBar";
+import Purchase from "./view/Content/Purchase/Purchase";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             />
             <Route path="/login" element={<Login />}/>
             <Route path="/products/:productId" element={<Detail  />}/>
+            <Route path="/products/:productId/purchase" element={<Purchase  />}/>
           </Routes>
         </Router>
       </div>

@@ -26,7 +26,7 @@ const Login = () => {
         <ConfigProvider
       theme={{
         token: {
-          colorPrimaryHover: ' #fdd835',
+          colorPrimaryHover: '#fbc02d',
           colorPrimary: ' #fdd835'
         },
       }}
@@ -51,36 +51,36 @@ const Login = () => {
             type="password"
             placeholder="비밀번호" />
         </Form.Item>
-    </ConfigProvider>
-        <div style={{ textAlign: 'center' }}>
-          <Form.Item>
-            <Form.Item name="remember" valuePropName="checked" >
-              <Checkbox prefixCls='login-state'> 로그인 상태유지 </Checkbox>
+          <div style={{ textAlign: 'center' }}>
+            <Form.Item>
+              <Form.Item name="remember" valuePropName="checked" >
+                <Checkbox prefixCls='login-state'> 로그인 상태유지 </Checkbox>
+              </Form.Item>
+              <a className="login-form-forgot" href="" style={{ color: 'black'}}>
+                아이디 찾기
+              </a>
+              <span>&nbsp;&nbsp;&nbsp;</span>
+              <a className="login-form-forgot" href="" style={{ color: 'black'}}>
+                비밀번호 찾기
+              </a>
             </Form.Item>
-            <a className="login-form-forgot" href="" style={{ color: 'black'}}>
-              아이디 찾기
-            </a>
-            <span>&nbsp;&nbsp;&nbsp;</span>
-            <a className="login-form-forgot" href="" style={{ color: 'black'}}>
-              비밀번호 찾기
-            </a>
-          </Form.Item>
-  
-          <Form.Item >
-            <Button type="primary" htmlType="submit" className="login-form-button" 
-            style={{ 
-              fontWeight: 'bold', WebkitTextStroke: '0.1px gray', color: 'black',
-              background: "#ffeb38", 
+    
+            <Form.Item >
+              <Button type="primary" htmlType="submit" className="login-form-button" 
+              style={{ 
+                fontWeight: 'bold', WebkitTextStroke: '0.1px gray', color: 'black',
+                background: "#ffeb38", 
               }} >
-              Log in
-            </Button>
-            <span>&nbsp;&nbsp;Or&nbsp;&nbsp;</span> 
-            <a href="" style={{ color: '#fbc02d', fontWeight: 'bold', textShadow: '0px 0.2px gray' }}>지금 회원가입</a>
-          </Form.Item>
-        </div>
+                Log in
+              </Button>
+              <span>&nbsp;&nbsp;Or&nbsp;&nbsp;</span> 
+              <a href="" style={{ color: '#fbc02d', fontWeight: 'bold', textShadow: '0px 0.2px gray' }}>지금 회원가입</a>
+            </Form.Item>
+          </div>
+        </ConfigProvider>
       </Form>
 
-      </div>
+    </div>
   )
 }
 

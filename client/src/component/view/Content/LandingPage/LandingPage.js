@@ -1,7 +1,6 @@
-import React, { useEffect, useState} from 'react'
-import { useParams } from 'react-router-dom';
+import React from 'react'
 import { Button, Row } from 'antd';
-import ShoesCard from '../Content/ShoesCard';
+import ShoesCard from '../ShoesCard';
 import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from "react-icons/ai";
 
 
